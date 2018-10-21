@@ -1,0 +1,63 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+-creates .git hidden file
+-creates master branch
+-adds any existing files as "untracked" - none have been committed yet
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+3.12
+How can you use the staging area to make sure you have one commit per logical change?
+-compare Working Directory v Staging Area (git diff)
+-compare Staging Area v most recent Repository Commit (git diff --staged)
+
+3.15 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+3.20 How do the diagrams help you visualize the branch structure?
+
+3.25 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+-git merge coins --We merged coins branch into master branch
+-git branch -d coins  --deleted coins branch (deletes name only, leaves commits)
+-git show 3884eab	--looked at difference between "add color" commit and its parent (hard to tell what its parent is when it merges".  3884eab was the original master HEAD when I cloned the project
+-git log --graph --one line	#shows all commits in easy to read manner, separates those originating from another branch with a "/" in front
+-git diff b0678b1 354dfdd	#"Revert controls" v "make ships able to spawn on coins"
+#last commit BEFORE "coins" branch created V last commit FROM "coins" branch
+-open games.js 			#coins yellow
+-git add game.js	git commit -m "made coins yellow"
+-open index.html		#Final test of game
+
+
+3.32 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Merged master branch into easy-mode branch
+-git checkout easy-mode
+-git merge master easy-mode #error message pops up
+-open game.js 			#Has 3 parts (original, etc)
+-changed to use her function and changed I<2 from I<3. 
+#Had to use git Kraken to complete merge b/c ran into a problem (didn't complete lesson in one sitting)
+-git log -n1
+
+
+
+
+
+
+
+
+
+
+
