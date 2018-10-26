@@ -4,12 +4,17 @@ When would you want to use a remote repository rather than keeping all your work
 
 
 
-Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
--git push origin master
--git pull origin master
+-Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+git push origin master
+git pull origin master
 
 
 
+-Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 
+Fork: github.com account#1 to GitHub.com account #2
+References back to original creator, less steps 
 
+Clone: copies from GitHub.com to local(Computer) or local to local
+To manually fork: clone to local, create new online/remote repo, push to repo
